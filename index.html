@@ -28,9 +28,54 @@
     
     <!-- /todolist & Filter -->
     <section>
-        <div class="row">
-            <div class="col-md-4">
-                
+        <div class="row ">
+            <div class="col-md-4 bg-secondary  ">
+                <h1 class="text-center">To Do List</h1>
+                <button type="button" class="btn btn-primary btn-lg btn-block mb-4">Add</button>
+                <form >
+                   <div class="form-group">
+                         <textarea class="form-control" rows="2">Add Icon</textarea>
+                   </div>
+                   <div class="form-group">
+                        <textarea class="form-control" rows="2">Add Navbar</textarea>
+                   </div>
+                   <div class="form-group">
+                        <textarea class="form-control" rows="2">Add Footer</textarea>
+                   </div>
+                   <div class="form-group">
+                        <input class="form-control form-control-lg" type="text" placeholder="add item ">
+                   </div>
+                   <div class="form-group">
+                    <button type="button" class="btn btn-lg d-flex ml-auto mb-4"><i class="fa-solid fa-calendar-days d-flex flex-row-reverse align-self-end"></i></button>
+                   </div>
+                </form>
+            </div>
+            <div class="col-md-8 bg-primary  ">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <p class="p-3 mb-0 ">Filter</p>
+                        <div>
+                         <select class="form-select">
+                            <option selected>All</option>
+                            <option value="1">Ari</option>
+                            <option value="2">Ben</option>
+                            <option value="3">Paul</option>
+                         </select>
+                        </div>
+                    </div>
+                    <div class="col-md-5 d-flex align-items-center ">
+                        <p class="p-3 mb-0">Sort</p>
+                        <div>
+                         <select class="form-select ">
+                            <option selected>Added Date</option>
+                            <option value="1">Due Date</option>
+                         </select>
+                        </div>
+                    </div>
+                    <div class="col-md-1 d-flex align-items-center ml-auto">
+                        <button type="button" class="btn btn-lg d-flex  mb-0"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+               </div> 
             </div>
         </div>
     </section>
