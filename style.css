@@ -38,10 +38,6 @@ body {
     height: 1.5rem;
 }
 
-.fixHeight{
-    height: 84vh;
-}
-
 .fixHeightHeadAndFoot{
     height: 6vh;
 }
@@ -69,4 +65,10 @@ body {
 .snsIcon{
     width: 2rem;
     height: 2rem;
+}
+
+@media only screen and (min-width: 767px) {
+    .fixHeight{
+        height: 84vh;
+    }
 }
