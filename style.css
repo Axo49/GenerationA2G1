@@ -2,3 +2,47 @@
     font-family: 'Noto Sans TC', sans-serif;
     font-family: 'Tiro Devanagari Sanskrit', serif;
 }
+
+.inProgress{
+    /* width: 80%; */
+    padding: 0.5rem;
+    background-color: bisque;
+}
+
+.cardText{
+    padding: 0.5rem;
+    background-color: khaki;
+}
+
+.aweIconCenter{
+    align-self: center;
+    text-align: center;
+}
+
+.cardDate{
+    float: right;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 0.1em 0.5rem 0.1rem 0.5rem;
+    width: 8rem;
+
+}
+
+.cardDate > input{
+    height: 1.5rem;
+}
+
+.fixHeight{
+    height: 88vh;
+}
+
+.fixHeightInProgress{
+    height: 40vh;
+}
+
+.fixHeightFinish{
+    height: 12vh;
+}
+
+.fixHeightItem{
+    height: 12vh;
+}
