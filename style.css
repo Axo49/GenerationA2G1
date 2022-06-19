@@ -43,7 +43,7 @@ body {
 }
 
 .fixHeightInProgress{
-    height: 30vh;
+    height: 25vh;
 }
 
 .fixHeightFinish{
@@ -67,8 +67,8 @@ body {
     height: 2rem;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
     .fixHeight{
-        height: 84vh;
+        height: 79vh;
     }
 }
