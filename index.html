@@ -32,153 +32,202 @@
     <!-- /navbar -->
 
     <!-- todolist & Filter -->
-    <!-- /todolist & Filter -->
+    <section>
+        <div class="row ">
+            <div class="col-md-4 bg-secondary  ">
+                <h1 class="text-center">To Do List</h1>
+                <button type="button" class="btn btn-primary btn-lg btn-block mb-4">Add</button>
+                <form >
+                   <div class="form-group">
+                         <textarea class="form-control" rows="2">Add Icon</textarea>
+                   </div>
+                   <div class="form-group">
+                        <textarea class="form-control" rows="2">Add Navbar</textarea>
+                   </div>
+                   <div class="form-group">
+                        <textarea class="form-control" rows="2">Add Footer</textarea>
+                   </div>
+                   <div class="form-group">
+                        <input class="form-control form-control-lg" type="text" placeholder="add item ">
+                   </div>
+                   <div class="form-group">
+                    <button type="button" class="btn btn-lg d-flex ml-auto mb-4"><i class="fa-solid fa-calendar-days d-flex flex-row-reverse align-self-end"></i></button>
+                   </div>
+                </form>
+            </div>
+            <div class="col-8 bg-light fixHeight">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <p class="p-3 mb-0 ">Filter</p>
+                        <div>
+                         <select class="form-select">
+                            <option selected>All</option>
+                            <option value="1">Ari</option>
+                            <option value="2">Ben</option>
+                            <option value="3">Paul</option>
+                         </select>
+                        </div>
+                    </div>
+                    <div class="col-md-5 d-flex align-items-center ">
+                        <p class="p-3 mb-0">Sort</p>
+                        <div>
+                         <select class="form-select ">
+                            <option selected>Added Date</option>
+                            <option value="1">Due Date</option>
+                         </select>
+                        </div>
+                    </div>
+                    <div class="col-md-1 d-flex align-items-center ml-auto">
+                        <button type="button" class="btn btn-lg d-flex  mb-0"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div> 
 
-    <!-- list item/progress/done -->
-    <div class="col-8 bg-light fixHeight">
-        <div class="row">
-
-            <div class="col d-flex p-0">
-                <div class="inProgress col-10">In progress</div>
-                <i class="fa-solid fa-bars col-2 aweIconCenter"></i>
-                <div class="col">
+                <!-- list item/progress/done -->
+                    <div class="col d-flex p-0">
+                        <div class="inProgress col-10">In progress</div>
+                        <i class="fa-solid fa-bars col-2 aweIconCenter"></i>
+                        <div class="col">
+                        </div>
+        
+                    </div>
+                    <div class="col-12 overflow-auto fixHeightInProgress">
+                        <div class="col-12 d-flex form-check py-2">
+                            <input class="form-check-input col-auto aweIconCenter mt-0" type="checkbox" value=""
+                                id="flexCheckCard1">
+                            <label class="form-check-label col-9 cardText mr-auto" for="flexCheckCard1">
+                                frist card adadjhgdaskjg asdgsajkhdgaskj    asjhdgksajhdgask    ashjdgasdkjhdsag
+                                <div class="cardDate">
+                                    <input id="date01" type="text" name="date" class="form-control datepicker" value="2022/06/24"
+                                        data-date-format="yyyy/mm/dd" onclick="updateON(this)">
+                                </div>
+                                <div class="progress col-12">
+                                    <div id="progress01" class="progress-bar progress-bar-striped" role="progressbar"
+                                        style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </label>
+                            <i class="fa-regular fa-circle-user fa-lg col-auto aweIconCenter col-1"></i>
+                            <i class="fa-solid fa-pen fa-lg col-auto aweIconCenter col-1"></i>
+                        </div>
+            
+                        <div class="col-12 d-flex form-check py-2">
+                            <input class="form-check-input col-auto aweIconCenter mt-0" type="checkbox" value=""
+                                id="flexCheckCard2">
+                            <label class="form-check-label col-9 cardText mr-auto" for="flexCheckCard2">
+                                2 card kdasdhakhasjk    khadkljsahldkaj
+                                <div class="cardDate">
+                                    <input id="date02" type="text" name="date" class="form-control datepicker" value="yyyy/mm/dd"
+                                        data-date-format="yyyy/mm/dd" onclick="updateON(this)">
+                                </div>
+                                <div class="progress col-12">
+                                    <div id="progress02" class="progress-bar progress-bar-striped" role="progressbar"
+                                        style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </label>
+                            <i class="fa-regular fa-circle-user fa-lg col-auto aweIconCenter col-1"></i>
+                            <i class="fa-solid fa-pen fa-lg col-auto aweIconCenter col-1"></i>
+                        </div>
+                        <div class="col-12 d-flex form-check py-2">
+                            <input class="form-check-input col-auto aweIconCenter mt-0" type="checkbox" value=""
+                                id="flexCheckCard5">
+                            <label class="form-check-label col-9 cardText mr-auto" for="flexCheckCard5">
+                                2 card kdasdhakhasjk    khadkljsahldkaj
+                                <div class="cardDate">
+                                    <input id="date03" type="text" name="date" class="form-control datepicker" value="2022/06/21"
+                                        data-date-format="yyyy/mm/dd" onclick="updateON(this)">
+                                </div>
+                                <div class="progress col-12">
+                                    <div id="progress03" class="progress-bar progress-bar-striped" role="progressbar"
+                                        style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </label>
+                            <i class="fa-regular fa-circle-user fa-lg col-auto aweIconCenter col-1"></i>
+                            <i class="fa-solid fa-pen fa-lg col-auto aweIconCenter col-1"></i>
+                        </div>
+                        <div class="col-12 d-flex form-check py-2">
+                            <input class="form-check-input col-auto aweIconCenter mt-0" type="checkbox" value=""
+                                id="flexCheckCard6">
+                            <label class="form-check-label col-9 cardText mr-auto" for="flexCheckCard6">
+                                2 card kdasdhakhasjk    khadkljsahldkaj
+                                <div class="cardDate">
+                                    <input id="date04" type="text" name="date" class="form-control datepicker" value="2022/06/29"
+                                        data-date-format="yyyy/mm/dd" onclick="updateON(this)">
+                                </div>
+                                <div class="progress col-12">
+                                    <div id="progress04" class="progress-bar progress-bar-striped" role="progressbar"
+                                        style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </label>
+                            <i class="fa-regular fa-circle-user fa-lg col-auto aweIconCenter col-1"></i>
+                            <i class="fa-solid fa-pen fa-lg col-auto aweIconCenter col-1"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex p-0">
+                        <div class="inProgress col-10">Finish</div>
+            
+            
+                    </div>
+                    <div class="col-12 overflow-auto fixHeightFinish">
+                        <!-- <div class="col-12 d-flex"> -->
+                        <div class="col-12 d-flex form-check py-2">
+                            <input class="form-check-input col-auto aweIconCenter mt-0" type="checkbox" value=""
+                                id="flexCheckCard3">
+                            <label class="form-check-label col-9 cardText mr-auto" for="flexCheckCard3">
+                                Default checkbox11 djhasgfkadjs sdkjhfgskjahfgaskd sdfjfdhkj kdsjfhdfskljhd
+                                <span class="cardDate">2022-06-18</span>
+                            </label>
+                            <i class="fa-regular fa-circle-user fa-lg col-auto aweIconCenter col-1"></i>
+                            <i class="fa-solid fa-pen fa-lg col-auto aweIconCenter col-1"></i>
+                        </div>
+                    </div>
+            
+                    <div class="col-12 d-flex p-0">
+                        <div class="inProgress col-10">Item List</div>
+            
+            
+                    </div>
+                    <div class="col-12 overflow-auto fixHeightItem">
+                        <!-- <div class="col-12 d-flex"> -->
+                        <div class="col-12 d-flex form-check py-2" id="card4">
+                            <input class="form-check-input col-auto aweIconCenter mt-0" type="checkbox" value=""
+                                id="flexCheckCard4">
+                            <label class="form-check-label col-9 cardText mr-auto" for="flexCheckCard4">
+                                Default checkbox11 djhasgfkadjs sdkjhfgskjahfgaskd sdfjfdhkj kdsjfhdfskljhd
+                                <span class="cardDate">2022-06-12</span>
+                            </label>
+                            <i class="fa-regular fa-circle-user fa-lg aweIconCenter col-1"></i>
+                            <i class="fa-solid fa-trash-can fa-lg aweIconCenter col-1" onclick="delItem('card4')"></i>
+                            <i class="fa-solid fa-pen fa-lg col-auto aweIconCenter col-1"></i>
+                        </div>
+                        <div class="col-12 d-flex form-check py-2" id="card7">
+                            <input class="form-check-input col-auto aweIconCenter mt-0" type="checkbox" value=""
+                                id="flexCheckCard7">
+                            <label class="form-check-label col-9 cardText mr-auto" for="flexCheckCard7">
+                                Default checkbox11 djhasgfkadjs sdkjhfgskjahfgaskd sdfjfdhkj kdsjfhdfskljhd
+                                <span class="cardDate">2022-06-12</span>
+                            </label>
+                            <i class="fa-regular fa-circle-user fa-lg aweIconCenter col-1"></i>
+                            <i class="fa-solid fa-trash-can fa-lg aweIconCenter col-1" onclick="delItem('card7')"></i>
+                            <i class="fa-solid fa-pen fa-lg col-auto aweIconCenter col-1"></i>
+                        </div>
+                        <div class="col-12 d-flex form-check py-2" id="card8">
+                            <input class="form-check-input col-auto aweIconCenter mt-0" type="checkbox" value=""
+                                id="flexCheckCard8">
+                            <label class="form-check-label col-9 cardText mr-auto" for="flexCheckCard8">
+                                Default checkbox11 djhasgfkadjs sdkjhfgskjahfgaskd sdfjfdhkj kdsjfhdfskljhd
+                                <span class="cardDate">2022-06-12</span>
+                            </label>
+                            <i class="fa-regular fa-circle-user fa-lg aweIconCenter col-1"></i>
+                            <i class="fa-solid fa-trash-can fa-lg aweIconCenter col-1" onclick="delItem('card8')"></i>
+                            <i class="fa-solid fa-pen fa-lg col-auto aweIconCenter col-1"></i>
+                        </div>
+                    </div>
                 </div>
-
+        
             </div>
         </div>
-        <div class="col-12 overflow-auto fixHeightInProgress">
-            <div class="col-12 d-flex form-check py-2">
-                <input class="form-check-input col-auto aweIconCenter mt-0" type="checkbox" value=""
-                    id="flexCheckCard1">
-                <label class="form-check-label col-9 cardText mr-auto" for="flexCheckCard1">
-                    frist card adadjhgdaskjg asdgsajkhdgaskj    asjhdgksajhdgask    ashjdgasdkjhdsag
-                    <div class="cardDate">
-                        <input id="date01" type="text" name="date" class="form-control datepicker" value="2022/06/24"
-                            data-date-format="yyyy/mm/dd" onclick="updateON(this)">
-                    </div>
-                    <div class="progress col-12">
-                        <div id="progress01" class="progress-bar progress-bar-striped" role="progressbar"
-                            style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </label>
-                <i class="fa-regular fa-circle-user fa-lg col-auto aweIconCenter col-1"></i>
-                <i class="fa-solid fa-pen fa-lg col-auto aweIconCenter col-1"></i>
-            </div>
-
-            <div class="col-12 d-flex form-check py-2">
-                <input class="form-check-input col-auto aweIconCenter mt-0" type="checkbox" value=""
-                    id="flexCheckCard2">
-                <label class="form-check-label col-9 cardText mr-auto" for="flexCheckCard2">
-                    2 card kdasdhakhasjk    khadkljsahldkaj
-                    <div class="cardDate">
-                        <input id="date02" type="text" name="date" class="form-control datepicker" value="yyyy/mm/dd"
-                            data-date-format="yyyy/mm/dd" onclick="updateON(this)">
-                    </div>
-                    <div class="progress col-12">
-                        <div id="progress02" class="progress-bar progress-bar-striped" role="progressbar"
-                            style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </label>
-                <i class="fa-regular fa-circle-user fa-lg col-auto aweIconCenter col-1"></i>
-                <i class="fa-solid fa-pen fa-lg col-auto aweIconCenter col-1"></i>
-            </div>
-            <div class="col-12 d-flex form-check py-2">
-                <input class="form-check-input col-auto aweIconCenter mt-0" type="checkbox" value=""
-                    id="flexCheckCard5">
-                <label class="form-check-label col-9 cardText mr-auto" for="flexCheckCard5">
-                    2 card kdasdhakhasjk    khadkljsahldkaj
-                    <div class="cardDate">
-                        <input id="date03" type="text" name="date" class="form-control datepicker" value="2022/06/21"
-                            data-date-format="yyyy/mm/dd" onclick="updateON(this)">
-                    </div>
-                    <div class="progress col-12">
-                        <div id="progress03" class="progress-bar progress-bar-striped" role="progressbar"
-                            style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </label>
-                <i class="fa-regular fa-circle-user fa-lg col-auto aweIconCenter col-1"></i>
-                <i class="fa-solid fa-pen fa-lg col-auto aweIconCenter col-1"></i>
-            </div>
-            <div class="col-12 d-flex form-check py-2">
-                <input class="form-check-input col-auto aweIconCenter mt-0" type="checkbox" value=""
-                    id="flexCheckCard6">
-                <label class="form-check-label col-9 cardText mr-auto" for="flexCheckCard6">
-                    2 card kdasdhakhasjk    khadkljsahldkaj
-                    <div class="cardDate">
-                        <input id="date04" type="text" name="date" class="form-control datepicker" value="2022/06/29"
-                            data-date-format="yyyy/mm/dd" onclick="updateON(this)">
-                    </div>
-                    <div class="progress col-12">
-                        <div id="progress04" class="progress-bar progress-bar-striped" role="progressbar"
-                            style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </label>
-                <i class="fa-regular fa-circle-user fa-lg col-auto aweIconCenter col-1"></i>
-                <i class="fa-solid fa-pen fa-lg col-auto aweIconCenter col-1"></i>
-            </div>
-        </div>
-
-        <div class="col-12 d-flex p-0">
-            <div class="inProgress col-10">Finish</div>
-
-
-        </div>
-        <div class="col-12 overflow-auto fixHeightFinish">
-            <!-- <div class="col-12 d-flex"> -->
-            <div class="col-12 d-flex form-check py-2">
-                <input class="form-check-input col-auto aweIconCenter mt-0" type="checkbox" value=""
-                    id="flexCheckCard3">
-                <label class="form-check-label col-9 cardText mr-auto" for="flexCheckCard3">
-                    Default checkbox11 djhasgfkadjs sdkjhfgskjahfgaskd sdfjfdhkj kdsjfhdfskljhd
-                    <span class="cardDate">2022-06-18</span>
-                </label>
-                <i class="fa-regular fa-circle-user fa-lg col-auto aweIconCenter col-1"></i>
-                <i class="fa-solid fa-pen fa-lg col-auto aweIconCenter col-1"></i>
-            </div>
-        </div>
-
-        <div class="col-12 d-flex p-0">
-            <div class="inProgress col-10">Item List</div>
-
-
-        </div>
-        <div class="col-12 overflow-auto fixHeightItem">
-            <!-- <div class="col-12 d-flex"> -->
-            <div class="col-12 d-flex form-check py-2" id="card4">
-                <input class="form-check-input col-auto aweIconCenter mt-0" type="checkbox" value=""
-                    id="flexCheckCard4">
-                <label class="form-check-label col-9 cardText mr-auto" for="flexCheckCard4">
-                    Default checkbox11 djhasgfkadjs sdkjhfgskjahfgaskd sdfjfdhkj kdsjfhdfskljhd
-                    <span class="cardDate">2022-06-12</span>
-                </label>
-                <i class="fa-regular fa-circle-user fa-lg aweIconCenter col-1"></i>
-                <i class="fa-solid fa-trash-can fa-lg aweIconCenter col-1" onclick="delItem('card4')"></i>
-                <i class="fa-solid fa-pen fa-lg col-auto aweIconCenter col-1"></i>
-            </div>
-            <div class="col-12 d-flex form-check py-2" id="card7">
-                <input class="form-check-input col-auto aweIconCenter mt-0" type="checkbox" value=""
-                    id="flexCheckCard7">
-                <label class="form-check-label col-9 cardText mr-auto" for="flexCheckCard7">
-                    Default checkbox11 djhasgfkadjs sdkjhfgskjahfgaskd sdfjfdhkj kdsjfhdfskljhd
-                    <span class="cardDate">2022-06-12</span>
-                </label>
-                <i class="fa-regular fa-circle-user fa-lg aweIconCenter col-1"></i>
-                <i class="fa-solid fa-trash-can fa-lg aweIconCenter col-1" onclick="delItem('card7')"></i>
-                <i class="fa-solid fa-pen fa-lg col-auto aweIconCenter col-1"></i>
-            </div>
-            <div class="col-12 d-flex form-check py-2" id="card8">
-                <input class="form-check-input col-auto aweIconCenter mt-0" type="checkbox" value=""
-                    id="flexCheckCard8">
-                <label class="form-check-label col-9 cardText mr-auto" for="flexCheckCard8">
-                    Default checkbox11 djhasgfkadjs sdkjhfgskjahfgaskd sdfjfdhkj kdsjfhdfskljhd
-                    <span class="cardDate">2022-06-12</span>
-                </label>
-                <i class="fa-regular fa-circle-user fa-lg aweIconCenter col-1"></i>
-                <i class="fa-solid fa-trash-can fa-lg aweIconCenter col-1" onclick="delItem('card8')"></i>
-                <i class="fa-solid fa-pen fa-lg col-auto aweIconCenter col-1"></i>
-            </div>
-        </div>
-    </div>
+    </section>
+    
+    
     <!-- /list item/progress/done -->
 
     <!-- footer -->
