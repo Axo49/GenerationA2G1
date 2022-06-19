@@ -3,6 +3,13 @@
     font-family: 'Tiro Devanagari Sanskrit', serif;
 }
 
+body {
+    background: -moz-linear-gradient(45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
+    background: linear-gradient(to 45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
+    background-size:cover;
+  }
+
 .inProgress{
     /* width: 80%; */
     padding: 0.5rem;
