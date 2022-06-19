@@ -39,11 +39,15 @@ body {
 }
 
 .fixHeight{
-    height: 88vh;
+    height: 84vh;
+}
+
+.fixHeightHeadAndFoot{
+    height: 6vh;
 }
 
 .fixHeightInProgress{
-    height: 40vh;
+    height: 30vh;
 }
 
 .fixHeightFinish{
@@ -60,4 +64,9 @@ body {
 
 .ppliconw1 {
     width: 50px!important;
+}
+
+.snsIcon{
+    width: 2rem;
+    height: 2rem;
 }
