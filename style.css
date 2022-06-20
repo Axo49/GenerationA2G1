@@ -72,10 +72,6 @@ body {
 
 @media only screen and (min-width: 768px) {
     .fixHeight{
-        height: 79vh;
+        height: 81vh;
     }
-}
-
-.fixHeightlist {
-    height: auto;
 }
